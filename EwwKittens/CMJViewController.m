@@ -32,7 +32,7 @@
     
     int width = 270 + arc4random()%100;
     int height = 270 + arc4random()%100;
-    NSString *urlString = [NSString stringWithFormat:@"http://placekitten.com/%d/%d, width, height"];
+    NSString *urlString = [NSString stringWithFormat:@"http://placekitten.com/%d/%d", width, height];
     NSURL *url = [NSURL URLWithString:urlString];
     //NSURL *url = [NSURL URLWithString:@"http://placekitten.com/320/320"];
     NSData *data = [NSData dataWithContentsOfURL:url];

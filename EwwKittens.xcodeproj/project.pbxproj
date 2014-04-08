@@ -21,7 +21,7 @@
 		70AA128C18F43F590069250A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AA126E18F43F550069250A /* UIKit.framework */; };
 		70AA129418F43F590069250A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70AA129218F43F590069250A /* InfoPlist.strings */; };
 		70AA129618F43F590069250A /* EwwKittensTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA129518F43F590069250A /* EwwKittensTests.m */; };
-		70AA12A118F44A300069250A /* CatsOnParadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA12A018F44A300069250A /* CatsOnParadeViewController.m */; };
+		70AA12A118F44A300069250A /* AllProfilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA12A018F44A300069250A /* AllProfilesViewController.m */; };
 		91701186A08944F1B2837DC0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3EC3C5AEC1E423B8F52FE66 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +56,8 @@
 		70AA129118F43F590069250A /* EwwKittensTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EwwKittensTests-Info.plist"; sourceTree = "<group>"; };
 		70AA129318F43F590069250A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70AA129518F43F590069250A /* EwwKittensTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EwwKittensTests.m; sourceTree = "<group>"; };
-		70AA129F18F44A300069250A /* CatsOnParadeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatsOnParadeViewController.h; sourceTree = "<group>"; };
-		70AA12A018F44A300069250A /* CatsOnParadeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatsOnParadeViewController.m; sourceTree = "<group>"; };
+		70AA129F18F44A300069250A /* AllProfilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllProfilesViewController.h; sourceTree = "<group>"; };
+		70AA12A018F44A300069250A /* AllProfilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllProfilesViewController.m; sourceTree = "<group>"; };
 		A3EC3C5AEC1E423B8F52FE66 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,6 +89,7 @@
 		70AA125E18F43F530069250A = {
 			isa = PBXGroup;
 			children = (
+				70AA127C18F43F560069250A /* Main.storyboard */,
 				70AA127018F43F550069250A /* EwwKittens */,
 				70AA128F18F43F590069250A /* EwwKittensTests */,
 				70AA126918F43F550069250A /* Frameworks */,
@@ -123,11 +124,10 @@
 			children = (
 				70AA127918F43F560069250A /* CMJAppDelegate.h */,
 				70AA127A18F43F560069250A /* CMJAppDelegate.m */,
-				70AA127C18F43F560069250A /* Main.storyboard */,
 				70AA127F18F43F570069250A /* CMJViewController.h */,
 				70AA128018F43F570069250A /* CMJViewController.m */,
-				70AA129F18F44A300069250A /* CatsOnParadeViewController.h */,
-				70AA12A018F44A300069250A /* CatsOnParadeViewController.m */,
+				70AA129F18F44A300069250A /* AllProfilesViewController.h */,
+				70AA12A018F44A300069250A /* AllProfilesViewController.m */,
 				70AA128218F43F570069250A /* Images.xcassets */,
 				70AA127118F43F550069250A /* Supporting Files */,
 			);
@@ -299,7 +299,7 @@
 				70AA128118F43F570069250A /* CMJViewController.m in Sources */,
 				70AA127718F43F560069250A /* main.m in Sources */,
 				70AA127B18F43F560069250A /* CMJAppDelegate.m in Sources */,
-				70AA12A118F44A300069250A /* CatsOnParadeViewController.m in Sources */,
+				70AA12A118F44A300069250A /* AllProfilesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +336,7 @@
 				70AA127D18F43F560069250A /* Base */,
 			);
 			name = Main.storyboard;
+			path = EwwKittens;
 			sourceTree = "<group>";
 		};
 		70AA129218F43F590069250A /* InfoPlist.strings */ = {

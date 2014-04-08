@@ -8,14 +8,33 @@
 
 #import "CMJAppDelegate.h"
 #import <Parse/Parse.h>
+#import "CMJViewController.h"
+#import "AllProfilesViewController.h"
+
 @implementation CMJAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [Parse setApplicationId:@"wJR4RiX83pxbeuf9UPByXhOCYQe5SfpctxeE0TRG"
                   clientKey:@"Ju36itfN0TDhJ65q0050jQLNEPuxSPn8vYGlI1HO"];    return YES;
+    
+    UITabBarController *tabBarController = (id)self.window.rootViewController;
+    AllProfilesViewController *allProfilesViewController;
+    
+    
+    for (UINavigationController *navController in tabBarController.viewControllers)
+    {
+        for (UIViewController *viewController in navController.viewControllers)
+        {
+            if ([viewController isKindOfClass:[AllProfilesViewController class]])
+            {
+                allProfilesViewController = (id)viewController;
+                
+            }
+        }
+    }
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -42,5 +61,8 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
+        
 @end
+
+
+

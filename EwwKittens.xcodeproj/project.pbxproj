@@ -46,8 +46,8 @@
 		70AA127418F43F560069250A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70AA127618F43F560069250A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70AA127818F43F560069250A /* EwwKittens-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EwwKittens-Prefix.pch"; sourceTree = "<group>"; };
-		70AA127918F43F560069250A /* CMJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMJAppDelegate.h; sourceTree = "<group>"; };
-		70AA127A18F43F560069250A /* CMJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMJAppDelegate.m; sourceTree = "<group>"; };
+		70AA127918F43F560069250A /* CMJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CMJAppDelegate.h; path = EwwKittens/CMJAppDelegate.h; sourceTree = "<group>"; };
+		70AA127A18F43F560069250A /* CMJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CMJAppDelegate.m; path = EwwKittens/CMJAppDelegate.m; sourceTree = "<group>"; };
 		70AA127D18F43F560069250A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70AA127F18F43F570069250A /* CMJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMJViewController.h; sourceTree = "<group>"; };
 		70AA128018F43F570069250A /* CMJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMJViewController.m; sourceTree = "<group>"; };
@@ -59,8 +59,8 @@
 		70AA129518F43F590069250A /* EwwKittensTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EwwKittensTests.m; sourceTree = "<group>"; };
 		70AA129F18F44A300069250A /* AllProfilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllProfilesViewController.h; sourceTree = "<group>"; };
 		70AA12A018F44A300069250A /* AllProfilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllProfilesViewController.m; sourceTree = "<group>"; };
-		70AA12A218F46BE80069250A /* ProfileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileDetailViewController.h; sourceTree = "<group>"; };
-		70AA12A318F46BE80069250A /* ProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileDetailViewController.m; sourceTree = "<group>"; };
+		70AA12A218F46BE80069250A /* ProfileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileDetailViewController.h; path = ../ProfileDetailViewController.h; sourceTree = "<group>"; };
+		70AA12A318F46BE80069250A /* ProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileDetailViewController.m; path = ../ProfileDetailViewController.m; sourceTree = "<group>"; };
 		A3EC3C5AEC1E423B8F52FE66 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,9 +92,9 @@
 		70AA125E18F43F530069250A = {
 			isa = PBXGroup;
 			children = (
+				70AA127918F43F560069250A /* CMJAppDelegate.h */,
+				70AA127A18F43F560069250A /* CMJAppDelegate.m */,
 				70AA127C18F43F560069250A /* Main.storyboard */,
-				70AA12A218F46BE80069250A /* ProfileDetailViewController.h */,
-				70AA12A318F46BE80069250A /* ProfileDetailViewController.m */,
 				70AA127018F43F550069250A /* EwwKittens */,
 				70AA128F18F43F590069250A /* EwwKittensTests */,
 				70AA126918F43F550069250A /* Frameworks */,
@@ -117,8 +117,8 @@
 		70AA127018F43F550069250A /* EwwKittens */ = {
 			isa = PBXGroup;
 			children = (
-				70AA127918F43F560069250A /* CMJAppDelegate.h */,
-				70AA127A18F43F560069250A /* CMJAppDelegate.m */,
+				70AA12A218F46BE80069250A /* ProfileDetailViewController.h */,
+				70AA12A318F46BE80069250A /* ProfileDetailViewController.m */,
 				70AA127F18F43F570069250A /* CMJViewController.h */,
 				70AA128018F43F570069250A /* CMJViewController.m */,
 				70AA129F18F44A300069250A /* AllProfilesViewController.h */,

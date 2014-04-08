@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="d7I-ys-iyJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="H1k-hY-b98">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -46,7 +46,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1998" y="143"/>
+            <point key="canvasLocation" x="2524" y="143"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="U3c-0Q-Ju3">
+            <objects>
+                <viewController id="DqR-uU-jyR" customClass="CMJCameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eGn-J4-775"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dfe-6l-8tk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KMs-JY-Cak">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fxc-E4-PtG">
+                                <rect key="frame" x="0.0" y="43" width="320" height="351"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6F-WN-tnH">
+                                <rect key="frame" x="20" y="471" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Take Picture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="DqR-uU-jyR" eventType="touchUpInside" id="X72-VC-tdp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVK-T8-0Ok">
+                                <rect key="frame" x="204" y="471" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Select Picture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectPhoto:" destination="DqR-uU-jyR" eventType="touchUpInside" id="eTB-o8-u7k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2J9-pT-AcU"/>
+                    <connections>
+                        <outlet property="imageView" destination="Fxc-E4-PtG" id="W3u-ON-8xt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a44-o2-VyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524" y="813"/>
         </scene>
         <!--All Profiles View Controller-->
         <scene sceneID="eAx-Ce-0GX">
@@ -78,7 +128,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sSd-GL-ibH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2450" y="143"/>
+            <point key="canvasLocation" x="2976" y="143"/>
         </scene>
         <!--Profile Detail View Controller-->
         <scene sceneID="nDU-ky-A4A">
@@ -107,7 +157,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1K-7L-b9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2855" y="143"/>
+            <point key="canvasLocation" x="3381" y="143"/>
         </scene>
         <!--Navigation Controller - Item-->
         <scene sceneID="pvL-Bp-bgk">
@@ -126,25 +176,45 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sFg-7h-kao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1549" y="138"/>
+            <point key="canvasLocation" x="2075" y="138"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="Vwr-hG-N1r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7oY-HQ-Ebr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="qEo-jA-X9u"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cLm-dr-0eb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DqR-uU-jyR" kind="relationship" relationship="rootViewController" id="cwb-LL-D6V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7TJ-Mr-NY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1998" y="813"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="RxE-N9-PC3">
+        <scene sceneID="XNC-Bb-b5E">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="d7I-ys-iyJ" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="H1k-hY-b98" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="iYB-C7-JOO">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="fvK-SJ-Rgt">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="4B7-i3-O3J" kind="relationship" relationship="viewControllers" id="oLD-g6-AiS"/>
+                        <segue destination="4B7-i3-O3J" kind="relationship" relationship="viewControllers" id="FtU-0V-p3W"/>
+                        <segue destination="7oY-HQ-Ebr" kind="relationship" relationship="viewControllers" id="ebM-id-TkR"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UGB-mT-C3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZD-av-kHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="138"/>
+            <point key="canvasLocation" x="1472" y="475"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -65,8 +65,11 @@
 		70AA129518F43F590069250A /* EwwKittensTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EwwKittensTests.m; sourceTree = "<group>"; };
 		70AA129F18F44A300069250A /* AllProfilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllProfilesViewController.h; sourceTree = "<group>"; };
 		70AA12A018F44A300069250A /* AllProfilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllProfilesViewController.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		70AA12A218F46BE80069250A /* ProfileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileDetailViewController.h; path = /Users/Jaime/MobileMakers/TeamEwwKittens/ProfileDetailViewController.h; sourceTree = "<absolute>"; };
 		70AA12A318F46BE80069250A /* ProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileDetailViewController.m; path = /Users/Jaime/MobileMakers/TeamEwwKittens/ProfileDetailViewController.m; sourceTree = "<absolute>"; };
+=======
+>>>>>>> 3296f5ce3dacec658fca2e63018c9156a9989d9e
 		A3EC3C5AEC1E423B8F52FE66 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03A03CB18F4AE14009CD832 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		D03A03CC18F4AE14009CD832 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -135,8 +138,6 @@
 		70AA127018F43F550069250A /* EwwKittens */ = {
 			isa = PBXGroup;
 			children = (
-				70AA12A218F46BE80069250A /* ProfileDetailViewController.h */,
-				70AA12A318F46BE80069250A /* ProfileDetailViewController.m */,
 				70AA127F18F43F570069250A /* CMJViewController.h */,
 				70AA128018F43F570069250A /* CMJViewController.m */,
 				70AA129F18F44A300069250A /* AllProfilesViewController.h */,
@@ -325,7 +326,6 @@
 <<<<<<< HEAD
 =======
 				D03A03D618F4BC1D009CD832 /* DetailViewController.m in Sources */,
-				70AA12A418F46BE80069250A /* ProfileDetailViewController.m in Sources */,
 				D03A03CD18F4AE14009CD832 /* LoginViewController.m in Sources */,
 >>>>>>> 28fb60df55b7966eef7e179fe38542092d36546f
 				6FFC2A5E18F4A78400464C50 /* CMJCameraViewController.m in Sources */,

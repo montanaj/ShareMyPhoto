@@ -6,45 +6,80 @@
 //  Copyright (c) 2014 Claire Jencks. All rights reserved.
 //
 
-#import "CMJViewController.h"
+#import "CMJCameraViewController.h"
 #import <Parse/Parse.h>
 
-@interface CMJViewController ()
+@interface CMJCameraViewController ()
 
 @end
 
-@implementation CMJViewController
+@implementation CMJCameraViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-    [PFUser enableAutomaticUser];
+    
+    // Does this device have a camera? If no hardware support is there message and exit - this is
+    // for testing basically
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                              message:@"Device has no camera"
+                                                             delegate:nil
+                                                    cancelButtonTitle:@"OK"
+                                                    otherButtonTitles: nil];
+        [myAlertView show];
+        
+    }
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-- (IBAction)onAddButtonPressed:(id)sender
+- (IBAction)takePhoto:(id)sender
 {
     
+    // prepare controller to take picture
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     
-    int width = 270 + arc4random()%100;
-    int height = 270 + arc4random()%100;
-    NSString *urlString = [NSString stringWithFormat:@"http://placekitten.com/%d/%d", width, height];
-    NSURL *url = [NSURL URLWithString:urlString];
-    //NSURL *url = [NSURL URLWithString:@"http://placekitten.com/320/320"];
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    
-    PFObject *object = [PFObject objectWithClassName:@"Kitten"];
-    PFFile *file = [PFFile fileWithData:data];
-    [object setObject:file forKey:@"image"];
-    
-    [object setObject:[PFUser currentUser] forKey:@"user"];
-    
-    [object saveInBackground];
+    [self presentViewController:picker animated:YES completion:NULL];
 }
 
+- (IBAction)selectPhoto:(id)sender
+{
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+}
+
+#pragma mark - Image Picker Controller delegate methods
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    // lets get the image and pass it along
+    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    self.imageView.image = chosenImage;
+    
+    // Persist data to local device in the photo album - do I really need all these nil's .. .. .
+    UIImageWriteToSavedPhotosAlbum(self.imageView.image, nil, nil, nil);
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+}
 @end

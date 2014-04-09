@@ -107,13 +107,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="BGt-J1-5jf">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="BGt-J1-5jf">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BGt-J1-5jf" id="lqA-gs-CR9">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Atv-i5-mlQ" kind="push" id="S8B-ab-p7b"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -127,17 +130,17 @@
             </objects>
             <point key="canvasLocation" x="2596" y="175"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Profile Detail View Controller-->
         <scene sceneID="nDU-ky-A4A">
             <objects>
-                <tableViewController id="Atv-i5-mlQ" sceneMemberID="viewController">
+                <tableViewController id="Atv-i5-mlQ" customClass="ProfileDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pUQ-xp-9Pk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="gqx-ll-TCx">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gqx-ll-TCx" id="b38-dv-oVc">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -150,6 +153,7 @@
                             <outlet property="delegate" destination="Atv-i5-mlQ" id="CgB-Vj-rVN"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="vP0-ur-svA"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1K-7L-b9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

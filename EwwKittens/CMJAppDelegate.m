@@ -15,8 +15,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [Parse setApplicationId:@"wJR4RiX83pxbeuf9UPByXhOCYQe5SfpctxeE0TRG"
-                  clientKey:@"Ju36itfN0TDhJ65q0050jQLNEPuxSPn8vYGlI1HO"];    return YES;
+    [Parse setApplicationId:@"0nNWJVQpemlpHUWrGDpgOGaQRnqLlFguVfwqlBJ2"
+                  clientKey:@"IVjmNPIhlH7eUXVAhv3eqZJzpmsiUqvaztw51vSr"];
+    return YES;
     
     UITabBarController *tabBarController = (id)self.window.rootViewController;
     AllProfilesViewController *allProfilesViewController;

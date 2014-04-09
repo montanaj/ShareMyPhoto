@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A6CC0873-558B-49C7-9E59-EBF3465D5BF6</string>
+	<string>02282F78-AF33-41EF-B836-DE92D780F00C</string>
 	<key>IDESourceControlProjectName</key>
 	<string>EwwKittens</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4BE99A47-0E9A-4B6A-A7E8-A4EA18099D6D</key>
+		<key>EDA42071-EC2D-4721-BF6A-D5870D30495C</key>
 		<string>https://github.com/montanaj/EwwKittens.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>EwwKittens.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4BE99A47-0E9A-4B6A-A7E8-A4EA18099D6D</key>
+		<key>EDA42071-EC2D-4721-BF6A-D5870D30495C</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4BE99A47-0E9A-4B6A-A7E8-A4EA18099D6D</string>
+	<string>EDA42071-EC2D-4721-BF6A-D5870D30495C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4BE99A47-0E9A-4B6A-A7E8-A4EA18099D6D</string>
+			<string>EDA42071-EC2D-4721-BF6A-D5870D30495C</string>
 			<key>IDESourceControlWCCName</key>
 			<string>EwwKittens</string>
 		</dict>

@@ -24,6 +24,10 @@
 		70AA129618F43F590069250A /* EwwKittensTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA129518F43F590069250A /* EwwKittensTests.m */; };
 		70AA12A118F44A300069250A /* AllProfilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA12A018F44A300069250A /* AllProfilesViewController.m */; };
 		91701186A08944F1B2837DC0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3EC3C5AEC1E423B8F52FE66 /* libPods.a */; };
+		D03A03CD18F4AE14009CD832 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03A03CC18F4AE14009CD832 /* LoginViewController.m */; };
+		D03A03D018F4B6CE009CD832 /* UserActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03A03CF18F4B6CE009CD832 /* UserActivityViewController.m */; };
+		D03A03D318F4BA3F009CD832 /* PhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03A03D218F4BA3F009CD832 /* PhotoTableViewController.m */; };
+		D03A03D618F4BC1D009CD832 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03A03D518F4BC1D009CD832 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,9 +65,25 @@
 		70AA129518F43F590069250A /* EwwKittensTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EwwKittensTests.m; sourceTree = "<group>"; };
 		70AA129F18F44A300069250A /* AllProfilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllProfilesViewController.h; sourceTree = "<group>"; };
 		70AA12A018F44A300069250A /* AllProfilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllProfilesViewController.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		70AA12A218F46BE80069250A /* ProfileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileDetailViewController.h; path = /Users/clairejencks/MobileMakers/ProfileDetailViewController.h; sourceTree = "<absolute>"; };
 		70AA12A318F46BE80069250A /* ProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileDetailViewController.m; path = /Users/clairejencks/MobileMakers/ProfileDetailViewController.m; sourceTree = "<absolute>"; };
+=======
+<<<<<<< HEAD
+		70AA12A218F46BE80069250A /* ProfileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileDetailViewController.h; path = /Users/Jaime/MobileMakers/TeamEwwKittens/ProfileDetailViewController.h; sourceTree = "<absolute>"; };
+		70AA12A318F46BE80069250A /* ProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileDetailViewController.m; path = /Users/Jaime/MobileMakers/TeamEwwKittens/ProfileDetailViewController.m; sourceTree = "<absolute>"; };
+=======
+>>>>>>> 3296f5ce3dacec658fca2e63018c9156a9989d9e
+>>>>>>> 55abbf5fbf173f4b45b27d20bc527c71078e088a
 		A3EC3C5AEC1E423B8F52FE66 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03A03CB18F4AE14009CD832 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D03A03CC18F4AE14009CD832 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D03A03CE18F4B6CE009CD832 /* UserActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserActivityViewController.h; sourceTree = "<group>"; };
+		D03A03CF18F4B6CE009CD832 /* UserActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserActivityViewController.m; sourceTree = "<group>"; };
+		D03A03D118F4BA3E009CD832 /* PhotoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewController.h; sourceTree = "<group>"; };
+		D03A03D218F4BA3F009CD832 /* PhotoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewController.m; sourceTree = "<group>"; };
+		D03A03D418F4BC1D009CD832 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D03A03D518F4BC1D009CD832 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,11 +143,17 @@
 		70AA127018F43F550069250A /* EwwKittens */ = {
 			isa = PBXGroup;
 			children = (
-				70AA12A218F46BE80069250A /* ProfileDetailViewController.h */,
-				70AA12A318F46BE80069250A /* ProfileDetailViewController.m */,
 				70AA127F18F43F570069250A /* CMJViewController.h */,
 				70AA128018F43F570069250A /* CMJViewController.m */,
 				70AA129F18F44A300069250A /* AllProfilesViewController.h */,
+				D03A03CB18F4AE14009CD832 /* LoginViewController.h */,
+				D03A03CC18F4AE14009CD832 /* LoginViewController.m */,
+				D03A03CE18F4B6CE009CD832 /* UserActivityViewController.h */,
+				D03A03CF18F4B6CE009CD832 /* UserActivityViewController.m */,
+				D03A03D118F4BA3E009CD832 /* PhotoTableViewController.h */,
+				D03A03D218F4BA3F009CD832 /* PhotoTableViewController.m */,
+				D03A03D418F4BC1D009CD832 /* DetailViewController.h */,
+				D03A03D518F4BC1D009CD832 /* DetailViewController.m */,
 				70AA12A018F44A300069250A /* AllProfilesViewController.m */,
 				70AA128218F43F570069250A /* Images.xcassets */,
 				70AA127118F43F550069250A /* Supporting Files */,
@@ -298,8 +324,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				70AA128118F43F570069250A /* CMJViewController.m in Sources */,
+				D03A03D318F4BA3F009CD832 /* PhotoTableViewController.m in Sources */,
 				70AA127718F43F560069250A /* main.m in Sources */,
+				D03A03D018F4B6CE009CD832 /* UserActivityViewController.m in Sources */,
 				70AA127B18F43F560069250A /* CMJAppDelegate.m in Sources */,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+				D03A03D618F4BC1D009CD832 /* DetailViewController.m in Sources */,
+				D03A03CD18F4AE14009CD832 /* LoginViewController.m in Sources */,
+>>>>>>> 28fb60df55b7966eef7e179fe38542092d36546f
+>>>>>>> 55abbf5fbf173f4b45b27d20bc527c71078e088a
 				6FFC2A5E18F4A78400464C50 /* CMJCameraViewController.m in Sources */,
 				70AA12A118F44A300069250A /* AllProfilesViewController.m in Sources */,
 			);
@@ -386,6 +422,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "BCD0A5BC-0B0B-45FD-A44A-C5C6AED636DF";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -417,6 +454,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "BCD0A5BC-0B0B-45FD-A44A-C5C6AED636DF";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -432,6 +470,7 @@
 				GCC_PREFIX_HEADER = "EwwKittens/EwwKittens-Prefix.pch";
 				INFOPLIST_FILE = "EwwKittens/EwwKittens-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "BCD0A5BC-0B0B-45FD-A44A-C5C6AED636DF";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -446,6 +485,7 @@
 				GCC_PREFIX_HEADER = "EwwKittens/EwwKittens-Prefix.pch";
 				INFOPLIST_FILE = "EwwKittens/EwwKittens-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "BCD0A5BC-0B0B-45FD-A44A-C5C6AED636DF";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
